@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="Style.css">
+    <title>Reservation Form</title>
+    <link rel="shortcut icon" href="Images3/voyantra.jpeg" type="image/x-icon">
+</head>
+<body>
+    <header class="thanks-header">
+        <nav class="main-navbar">
+            <img src="Images3/voyantra.jpeg" id="logo">
+            <a href="index.html" class="logo"><span>V</span>OYANTRA</a></nav>
+    </header>
+    <hr>
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="Images3/voyantra.jpeg" alt="">
+            </div>
+            <form action="Thanks.html" method="get">
+                <h1 class="head1">Travel Booking Form</h1>
+                <hr>
+                <div class="inputBox">
+                    <h3>Full Name</h3>
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                </div>
+                <div class="inputBox">
+                    <h3>Email</h3>
+                    <input type="email" name="email" placeholder="Enter Your Mail Id" required>
+                </div>
+                <div class="inputBox">
+                    <h3>Phone Number</h3>
+                    <input type="tel" name="phone" placeholder="10 digits" maxlength="10" pattern="[0-9]{10}" required>
+                </div>
+                <div class="inputBox">
+                    <h3>Gender</h3>
+                    <select name="gender" id="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <h3>Date Of Birth</h3>
+                    <input type="date" name="dob" id="dob" required>
+                </div>
+                <div class="inputBox">
+                    <h3>Country/State</h3>
+                    <input type="text" name="country" id="country" readonly>
+                </div>
+                <div class="inputBox">
+                    <h3>Destination</h3>
+                    <input type="text" name="destination" id="destination" readonly>
+                </div>
+                <div class="inputBox">
+                    <h3>Travel Month</h3>
+                    <input  type="text" name="month" id="month" readonly>
+                </div>
+                <div class="inputBox">
+                    <h3>Arrivals</h3>
+                    <input type="date" name="arrival_date" id="arrival_date" required>
+                </div>
+                <div class="inputBox">
+                    <h3>Leaving</h3>
+                    <input type="date" name="leaving_date" id="leaving_date" required>
+                </div>
+                <div class="inputBox">
+                    <h3>Passport Number</h3>
+                    <input type="text" name="passport">
+                </div>
+                <div class="inputBox">
+                    <h3>Hotel Preference</h3>
+                    <select name="hotel" required>
+                        <option value="">Select Star Hotel</option>
+                        <option value="3 Star">3 Star</option>
+                        <option value="4 Star">4 Star</option>
+                        <option value="5 Star">5 Star</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <h3>Room Type</h3>
+                    <select name="room" required>
+                        <option value="">Select Room</option>
+                        <option value="Single">Single</option>
+                        <option value="Double">Double</option>
+                        <option value="Family">Family</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <h3>Adults</h3>
+                    <input type="number" name="adults" id="adults" placeholder="Number Of Adults" value="1" required>
+                </div>
+                <div class="inputBox">
+                    <h3>Children</h3>
+                    <input type="number" name="children" id="children" placeholder="Number Of Children" value="0" required>
+                </div>
+                <div class="inputBox">
+                    <h3>Pickup Location</h3>
+                    <input type="text" name="pickup" required>
+                </div>
+                <div class="inputBox">
+                    <h3>Price Per Person</h3>
+                    <input type="number" id="price" name="price" readonly>
+                </div>
+                <div class="inputBox">
+                    <h3>Total Guests</h3>
+                    <input type="number" name="guests" id="guests" readonly>
+                </div>
+                <div class="inputBox">
+                    <h3>Total Amount</h3>
+                    <input type="number" name="total" id="total" readonly>
+                </div>
+                <div class="btn-container">
+                    <button type="button" onclick="calculateBooking()" class="book-btn">Calculate</button>
+                </div>
+                <div class="inputBox">
+                    <h3>Payment Method</h3>
+                    <select name="payment" required>
+                        <option value="">Select Payment Mode</option>
+                        <option value="UPI">UPI</option>
+                        <option value="Credit Card">Credit Card</option>
+                        <option value="Debit Card">Debit Card</option>
+                        <option value="Net Banking">Net Banking</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <h3>Special Request</h3>
+                    <textarea name="request" cols="30" rows="5" class="textareabox" placeholder="Enter Any Request You Need in this Travel Sphere"></textarea>
+                </div>
+
+                <div class="term-box">
+                    <input type="checkbox" id="terms" required>
+                    <h3>I Agree To The Terms & Conditions</h3>
+                </div>
+                <div class="btn-container booking-btn">
+                    <input type="submit" name="send" class="book-btn" value="Plan Your Trip">
+                    <input type="reset" class="book-btn" value="Reset">
+                </div>
+            </form>
+        </div>
+    </section>
+    <hr>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="Booking.js"></script>
+</body>
+</html>
