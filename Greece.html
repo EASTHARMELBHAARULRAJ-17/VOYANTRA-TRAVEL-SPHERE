@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Style.css">
+    <title>GREECE DESTINATIONS</title>
+    <link rel="shortcut icon" href="Images3/voyantra.jpeg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <img src="Images3/voyantra.jpeg" id="logo">
+        <a href="#" class="logo"><span>V</span>OYANTRA</a>
+        <nav class="main-navbar">
+            <a href="index.html">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="Destination.html">DESTINATION</a>
+            <a href="#packages">PACKAGES</a>
+            <a href="#gallerys">GALLERY</a>
+            <a href="#book">BOOK</a>
+            <a href="Contact.html">CONTACT</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Search Here.....">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+            <h3>Login</h3>
+            <input type="email" class="box" placeholder="Enter Your Email">
+            <input type="password" class="box" placeholder="Enter Your Password">
+            <input type="submit" value="login now" class="book-btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember Me</label>
+            <p>Forget Password? <a href="#">Click Here</a></p>
+            <p>Don't Have An Account?<a href="#">Register Now</a></p>
+        </form>
+    </div>
+    <hr>
+    <section class="section_container destination_container" id="about">
+        <h1 class="section_header">POPULAR DESTINATION (GREECE)</h1>
+        <p class="section_description">
+            Discover The Most Loved Destination In "ISLAND PARADISE"
+        </p>
+        <div id="destinationCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="destination_card  destination_carousel_card">
+                        <img src="Images2/Greece1.jpg" alt="">
+                        <div class="destination_content">SANTORINI</div>
+                    </div>
+                    <div class="destination_card_details">
+                        <div class="info">
+                            <h1>WHITE VILLAGES</h1>
+                            <h3>Per Day = ₹19,200</h3>
+                        </div>
+                        <div class="destination_rating">
+                            <i class="ri-star-fill"></i>
+                            <span>5.0</span>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <a href="Booking.html? country=Greece&destination=Santorini&price=19200&month=April%20To%20October" class="book-btn">BOOK NOW</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="destination_card destination_carousel_card">
+                        <img src="Images2/Greece2.jpeg" alt="">
+                        <div class="destination_content">ACROPOLIS ATHENS</div>
+                    </div>
+                    <div class="destination_card_details">
+                        <div class="info">
+                            <h1>ANCIENT WONDER</h1>
+                            <h3>Per Day = ₹16,800</h3>
+                        </div>
+                        <div class="destination_rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <a href="Booking.html? country=Greece&destination=Acropolis%20Athens&price=16800&month=April%20To%20October" class="book-btn">BOOK NOW</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="destination_card destination_carousel_card">
+                        <img src="Images2/Greece3.jpeg" alt="">
+                        <div class="destination_content">MYKONOS ISLAND</div>
+                    </div>
+                    <div class="destination_card_details">
+                        <div class="info">
+                            <h1>ISLAND ESCAPE</h1>
+                            <h3>Per Day = ₹20,000</h3>
+                        </div>
+                        <div class="destination_rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <a href="Booking.html? country=Greece&destination=Mykonos%20Island&price=20000&month=April%20To%20October" class="book-btn">BOOK NOW</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#destinationCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+            <button class="carousel-control-next" type="button" data-bs-target="#destinationCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+        </div>
+    </section>
+    <hr>
+
+    <section class="sections" id="about">
+    <h1>About Greece</h1>
+    <p>Greece is known for its ancient history, beautiful islands, crystal-clear beaches, and Mediterranean charm. The country offers a unique combination of historic monuments, scenic landscapes, and vibrant local traditions.</p>
+    </section>
+    <hr>
+
+    <section class="sections">
+        <h1>Top Attractions</h1>
+        <ul>
+            <li>Santorini - White Villages</li>
+            <li>Acropolis Athens - Ancient Wonder</li>
+            <li>Mykonos Island - Island Escape</li>
+        </ul>
+    </section>
+    <hr>
+
+    <section class="sections">
+        <h1>Best Time To Visit</h1>
+        <ul>
+            <li>April To October</li>
+        </ul>
+    </section>
+    <hr>
+
+    <section class="sections" id="packages">
+        <h1>Tour Packages</h1>
+        <div class="package-container">
+            <div class="package-card">
+                <h3>Basic Package</h3>
+                <p>3 Days / 2 Nights</p>
+                <h4>₹57,900</h4>
+            </div>
+                <div class="package-card">
+                <h3>Standard Package</h3>
+                <p>5 Days / 4 Nights</p>
+                <h4>₹95,900</h4>
+            </div>
+                <div class="package-card">
+                <h3>Premium Package</h3>
+                <p>7 Days / 6 Nights</p>
+                <h4>₹1,33,900</h4>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <section class="sections">
+        <h1>Popular Hotels</h1>
+        <div class="hotel-container">
+            <div class="hotel-card">
+                <img src="Images/GreeceH1.jpg">
+                <h3>Canaves Oia Suites</h3>
+                <p>₹8,800 / Night</p>
+            </div>
+            <div class="hotel-card">
+                <img src="Images/GreeceH2.webp">
+                <h3>Grace Hotel</h3>
+                <p>₹8,800 / Night</p>
+            </div>
+            <div class="hotel-card">
+                <img src="Images/GreeceH3.png">
+                <h3>Myconian Ambassador Hotel</h3>
+                <p>₹8,800 / Night</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+    
+    <section class="sections" id="gallerys">
+        <h1>Gallery</h1>
+        <div class="gallery">
+            <img src="Images1/G1.jpg">
+            <img src="Images1/G2.jpg">
+            <img src="Images1/G3.jpg">
+            <img src="Images1/G4.jpg">
+        </div>
+    </section>
+    <hr>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="Main.js"></script>
+</body>
+</html>

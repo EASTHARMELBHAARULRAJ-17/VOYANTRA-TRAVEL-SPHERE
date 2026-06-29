@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="Style.css">
+    <title>CONTACT US</title>
+    <link rel="shortcut icon" href="Images3/voyantra.jpeg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <img src="Images3/voyantra.jpeg" id="logo">
+        <a href="#" class="logo"><span>V</span>OYANTRA</a>
+        <nav class="main-navbar">
+            <a href="index.html">HOME</a>
+            <a href="About.html">ABOUT</a>
+            <a href="Destination.html">DESTINATION</a>
+            <a href="index.html#book">BOOK</a>
+            <a href="index.html#services">SERVICES</a>
+            <a href="index.html#reviews">REVIEW</a>
+            <a href="Contact.html">CONTACT</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Search Here.....">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="Thanks.html" method="get">
+            <h3>Login</h3>
+            <input type="email" class="box" placeholder="Enter Your Email">
+            <input type="password" class="box" placeholder="Enter Your Password">
+            <input type="submit" value="login now" class="book-btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember Me</label>
+            <p>Forget Password? <a href="#">Click Here</a></p>
+            <p>Don't Have An Account?<a href="#">Register Now</a></p>
+        </form>
+    </div>
+    <hr>
+    
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="Images3/Voyantra Logo.png" alt="">
+            </div>
+
+            <form action="" method="POST">
+                <h1 class="head1">ENQUIRY FORM</h1>
+                <hr>
+                <div class="inputBox">
+                    <h3>Name</h3>
+                    <input type="text" name="UserName" placeholder="Enter Your Name (Capital)">
+                </div>
+                <div class="inputBox">
+                    <h3>Mobile Number</h3>
+                    <input type="number" name="UserMobileNo" placeholder="Enter Your Number (10)">
+                </div>
+                <div class="inputBox">
+                    <h3>Email Id</h3>
+                    <input type="email" name="UserEmailId" placeholder="Enter Your Email Id (Small)">
+                </div>
+                <div class="inputBox">
+                    <h3>Password</h3>
+                    <input type="password" name="UserPassword" placeholder="Enter Your Password">
+                </div>
+                <div class="genderbox">
+                    <h3>Gender</h3>
+                    <input type="radio" name="gender" value="Male">Male
+                    <input type="radio" name="gender" value="Female">Female
+                    <input type="radio" name="gender" value="Other">Others
+                </div>
+                <div class="inputBox">
+                    <h3>Country</h3>
+                    <input type="text" name="country" value="INDIA" readonly>
+                </div>
+                <div class="inputBox">
+                    <h3>Queries</h3>
+                    <textarea name="Comments" id="" cols="30" rows="10" class="textareabox" placeholder="Enter Any Enquiry Related to this Form"></textarea>
+                </div>
+                <div class="btn-container contact-btn">
+                    <input type="submit" name="contact" class="book-btn" value="Submit">
+                    <input type="reset" value="Clear" class="book-btn">
+                </div>
+            </form>
+        </div>
+    </section>
+    <hr>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="Main.js"></script>
+</body>
+</html>
